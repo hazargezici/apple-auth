@@ -21,11 +21,12 @@
     <script type="text/javascript">
       AppleID.auth.init({
         clientId: "tr.com.yatasbedding",
-        scope: "",
+        scope: "name email",
         redirectURI:
           "https://s1-api.yatas.com.tr/occ/v2/yatas/get-city?countryIsocode=TR",
         usePopup: true,
-        responseMode: "web_message",
+        state: "init",
+        nonce: "test",
       });
 
       const buttonElementNew = document.getElementById("appleid-signin");
